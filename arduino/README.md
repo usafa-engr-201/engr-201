@@ -1,4 +1,4 @@
-Explore arduino projects
+*Explore arduino projects*
 
 
 
@@ -16,17 +16,20 @@ Our introductory projects are `blink` and `blink-without-delay`.
 
 - install VSCode: https://code.visualstudio.com/
 
-- install the `piorduino` extension (`ctrl`-`shift`-`x` to search extensions)
+- Within VSCode, install the `Pioarduino IDE` extension (To seach extensions: Windows `ctrl`-`shift`-`x` Mac: `cmd`-`shift`-`x`)
 
-  - `pioarduino` may also ask you to install python
+  - `pioarduino` may also ask you to install python, if not already installed. Install python.
 
   
 
 ## blink example
 
-Open the blink example in VSCode. To open a platformio project:
+*Open the blink example in VSCode*
+
+To open a platformio project in VSCode:
 
 - file → open folder
+- navigate to your local GitHub clone folder
 - select the folder 'blink'
 - 'select folder'
 
@@ -34,23 +37,26 @@ Open the blink example in VSCode. To open a platformio project:
 
 You can interact with the files in a platformio project by viewing the files in the folder. ![image-20260623232941374](./assets/vscode_documents.png)
 
-The code is contained in `main.cpp`. Review that file now. 
+The code is contained in `main.cpp` within the `src` folder. Review that file now. 
 
 
 
 Arduino programs largely consist of 4 parts:
 
-- NOTE: `//` denotes a comment
+
 - (optional) global definitions
 - setup() {…} // this code runs once every time the microcontroller starts
 - (optional) more definitions
 - loop() {…} // this code runs repeatedly forever
+- NOTE: `void` denotes a function that does not return any value or data when it finishes running
+- NOTE: `//` denotes a comment
 
 
 
-Now program your microcontroller. Connect it to your computer via USB. 
 
+*Program your microcontroller*
 
+Connect your microcontroller to your computer via USB. 
 
 You may have to explicitly select the correct USB/Serial port. To do so click this icon on the bottom status bar. ![image-20260623233856917](./assets/serial_selector.png) The correct port is probably the highest number. 
 
@@ -58,8 +64,9 @@ You may have to explicitly select the correct USB/Serial port. To do so click th
 
 Upload the code to your microcontroller. 
 
-- Open the platformio menu panel. ![image-20260623232748228](./assets/pioarduino.png)
-- rp2040_adalogger → general → upload
+- open the platformio menu panel. ![image-20260623232748228](./assets/pioarduino.png)
+- if you do not see `rp2040_adalogger` select platformio.ini within the `blink` folder, then return to the platformio menu panel.
+- rp2040_adalogger → general → `Upload`
 
 
 
@@ -70,12 +77,14 @@ A red LED near the USB port should begin blinking.
 After you upload the code, the microcontroller will run that program every time it restarts. You can restart by unplugging/replugging the USB cable or by pressing the RESET button. 
 
 
-
 You can adjust the `delay()` values to change the blink speed. 
+- return to the `main.cpp` code in the `blink` folder.
+- NOTE: the value inside of `delay()` is in milliseconds, so delay(1000) = 1 sec.
+- change the LED time on to 500 ms and the time off to 2000 ms, then `Upload` again. Can you see the differnce?
 
 
 
-`delay()` completely pauses the microcontroller; nothing else can happen during the delay. This is suitable for a simple blink example, but becomes a problem for anything more complicated. Consider how you would blink 2 LEDs. 
+NOTE: `delay()` pauses the microcontroller; nothing else can happen during the delay. This is suitable for a simple blink example, but becomes a problem for anything more complicated. Consider how you would blink 2 LEDs. 
 
 
 
@@ -86,7 +95,14 @@ To blink an LED without using `delay()`, use the classic arduino example `blink-
 
 
 Open the `blink-without-delay` folder. 
+- `blink-without-delay` controls two separate LEDs at separate intervals and allows other code to run simultaneously.
 
 
+Review the `main.cpp` code and comments for understanding. `Upload` to your microcontroller. The red and green LEDs should both now blink.
 
-Review the code, modify if desired, and upload to your microcontroller. 
+Modify the blink intervals 
+- change LED A to 2000 ms and LED B to 100 ms, and then `Upload` 
+
+*Keep this code installed to show your instructor in class*
+
+
