@@ -4,6 +4,14 @@ Design and print a nameplate or keychain!
 
 
 
+**Astro majors**: Your nameplate is intended for a satellite model in a future class. You may print an additional copy if you also want a keychain. 
+
+
+
+**Aero majors**. Follow the same guidelines, but modify to make a keychain instead of a nameplate. 
+
+
+
 ## Objectives
 
 Achieve basic familiarity with the design and manufacturing process for 3D objects, including:
@@ -21,7 +29,17 @@ For this project, you may work with anyone, including your instructor and classm
 
 
 
-# Part 1: create a 3D model
+## Overview
+
+- design object
+- create engineering drawing
+- slice object
+- manufacture object
+- document project
+
+
+
+# Part 1: computer model
 
 Use CAD software to design a nameplate or keychain. 
 
@@ -29,33 +47,92 @@ You can use Fusion in the browser without installing it. https://fusion.online.a
 
 
 
+Design your nameplate according to the specification drawing: [nameplate_drawing.pdf](./nameplate_drawing.pdf). 
 
 
 
+## Requirements
 
-Using CAD software to design a keychain to manufacture in assignment K2. 
+- include at least one graphic (use an svg file)
+  - department logos are available in the assets folder, or find your own image
+  - if desired, use [inkscape](https://inkscape.org/release/inkscape-1.4.4/)'s "trace bitmap" feature to convert another format to svg
+- text
+- chamfered edges and debossed features on the bottom face
+- filleted edges and embossed features on the top face
+- hole feature for holes
 
-- size: approximately 25 mm x 75 mm
-- needs at least two flat sides
-- include 6 mm hole for keyring
-- designs on both sides
-  - include words
-  - include graphic (dept logo or use your own)
 
-The easiest and best way to include graphics is to use a *vector* image. Dept logo vector images are included in this folder. 
 
-<img src="./Aero%20logo.svg" alt="aero logo" style="zoom:100%;" />  <img src="./astro%20logo.svg" alt="astro logo" style="zoom:100%;" />
+**Keychain**
+Modify the instructions to make a keychain instead of a nameplate. Make one larger hole (approximately 6 mm) instead of 6 screw holes. 
 
-Fusion: use *\*.svg* image files. You can find additional svg files online if desired. 
-Onshape: use *\*.dxf* image files. You can convert an svg file to a dxf file with the free [inkscape](https://inkscape.org/) image editor. 
+**Nameplate** 
+Your nameplate will look like this:
 
-You will cover the necessary CAD tools (onshape or fusion) in class. 
+![nameplate](./assets/nameplate.svg)
 
-### submission
-- [ ] slicer project file (\*.3mf file)
-- [ ] show keychain to your instructor in class 
-- [ ] CAD file–submit in CAD program or include in repository
-- [ ] cropped screenshots of keychain model (2 image files, front and back)
-- [ ] brief report (keychain.md) containing 
-	- [ ] CAD model screenshots
-	- [ ] printed model photographs
+Export the design to your repository in 3 formats:
+
+- f3d (suitable for further Fusion editing)
+- step (suitable for slicing)
+- png screenshot of your model in Fusion—crop appropriately
+
+
+
+# Part 2: engineering drawing
+
+Create an engineering drawing. Your drawing should show key dimensions, although it does not need to be as thorough as the assignment instructions. 
+
+Save the drawing to your repository as a pdf. You will also bring a printed copy to class
+
+
+
+# Part 3: slice model
+
+Use PrusaSlicer to *slice* your model—prepare it for additive manufacturing. 
+
+
+
+Place the chamfered/debossed face down towards the build plate. 
+
+## Settings
+
+- printer: Prusa CoreOne
+- nozzle: 0.4 mm
+- material: PLA
+- infill: 15% gyroid
+
+
+
+Save the prepared model (3mf file) to your repository. 
+
+Slice the project and export the sliced file (gcode file) to a USB stick for printing. 
+
+
+
+# Part 4: print model
+
+Print your model. PrusaSlicer will provide time and material estimates after slicing. 
+
+Bring your printed model to class on the project due date. 
+
+
+
+# Part 5: submission
+
+Bring to class:
+
+- printed model
+- printed design drawing
+
+
+
+Submit in your repository
+
+- f3d file (fusion)
+- step file (for slicing)
+- pdf design drawing
+- 3mf file (slicer file)
+- screenshot of your model
+- photo of your printed model—be creative
+- brief submission report ([submission.md](submission.md))
