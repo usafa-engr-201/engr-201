@@ -14,7 +14,7 @@ The purpose of this project is to…
 
 
 # Model/Mathematical Technique
-Describe your technique and include equations. Copy the equations from course material. 
+Describe your technique and include equations. Copy equations from the assignment instructions. 
 
 
 
