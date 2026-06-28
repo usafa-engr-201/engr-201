@@ -62,7 +62,7 @@ Next, prepare and execute a thorough function validation test. Document your res
 
 
 # Part 3: atmosphere model plotting
-Modify the driver script  [plot_atmosphere.m](plot_atmosphere.m) to plot your model's outputs throughout the model's valid altitude range. Compare your atmosphere model to matlab's [`atmosisa()`](https://www.mathworks.com/help/aerotbx/ug/atmosisa.html), provided with the aerospace toolbox. 
+Modify the driver script [plot_atmosphere.m](plot_atmosphere.m) to plot your model's outputs throughout the model's valid altitude range. Compare your atmosphere model to matlab's [`atmosisa()`](https://www.mathworks.com/help/aerotbx/ug/atmosisa.html), provided with the aerospace toolbox. 
 
 Plot results using Engr 201 plotting standards. Save figure as an SVG file. Output should be identical to the example below. 
 
@@ -77,6 +77,12 @@ Write a medium-length report [atmosphere_report](atmosphere_report.md) describin
 
 
 ## Submission
+
+Commit and push all files to your remote (github) repository. Verify that everything shows up correctly on github.com
+
+When complete, create a pull request and request a review from your instructor. 
+
+
 
 - [ ] modified/completed atmosphere function (atmosphere_model.m)
 - [ ] validation test script (test_script_atmosphere.m)
