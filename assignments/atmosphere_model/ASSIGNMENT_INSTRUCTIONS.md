@@ -1,4 +1,4 @@
-# atmosphere model 
+# Atmosphere Model 
 Create and validate a matlab function to calculate atmospheric properties from the 1976 Standard Atmosphere model. A Standard Atmosphere calculator is a powerful tool that you will use throughout your cadet, engineering, flying, and flight test careers.
 
 
@@ -9,7 +9,7 @@ Develop proficiency using a programming language (MATLAB) to solve an engineerin
 
 
 
-## Documentation
+## Authorized Resources
 
 For this project, you may work with anyone, including your instructor and classmates. 
 
@@ -90,5 +90,4 @@ When complete, create a pull request and request a review from your instructor.
 - [ ] completed/modified driver script (plot_atmosphere.m)
 - [ ] output plot image (svg file)
 - [ ] completed report (atmosphere_report.md)
-
 
